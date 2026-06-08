@@ -12,7 +12,7 @@ updateCartCount();
 async function fetchProducts() {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/products"
+      "https://techstore-api-8nta.onrender.com/api/products"
     );
 
     allProducts = await response.json();

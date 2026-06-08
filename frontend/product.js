@@ -11,7 +11,7 @@ async function getProduct() {
   try {
 
     const response = await fetch(
-      `http://localhost:5000/api/products/${id}`
+      `https://techstore-api-8nta.onrender.com/api/products/${id}`
     );
 
     const product = await response.json();

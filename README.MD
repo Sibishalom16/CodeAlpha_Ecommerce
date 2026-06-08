@@ -6,7 +6,7 @@ A Full Stack E-Commerce Website built using HTML, CSS, JavaScript, Node.js, Expr
 
 Frontend: https://your-frontend-link.netlify.app
 
-Backend API: https://your-backend-link.onrender.com
+Backend API: https://techstore-api-8nta.onrender.com
 
 ## 🚀 Features
 

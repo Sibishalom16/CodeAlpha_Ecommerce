@@ -19,7 +19,7 @@ if (registerForm) {
         document.getElementById("password").value;
 
       const response = await fetch(
-        "http://localhost:5000/api/users/register",
+        "https://techstore-api-8nta.onrender.com/api/users/register",
         {
           method: "POST",
 
@@ -71,7 +71,7 @@ if (loginForm) {
         document.getElementById("password").value;
 
       const response = await fetch(
-        "http://localhost:5000/api/users/login",
+        "https://techstore-api-8nta.onrender.com/api/users/login",
         {
           method: "POST",
 
