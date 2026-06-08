@@ -4,7 +4,7 @@ A Full Stack E-Commerce Website built using HTML, CSS, JavaScript, Node.js, Expr
 
 ## 🌐 Live Demo
 
-Frontend: https://your-frontend-link.netlify.app
+Frontend: techh-store.netlify.app
 
 Backend API: https://techstore-api-8nta.onrender.com
 
