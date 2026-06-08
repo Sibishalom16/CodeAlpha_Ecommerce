@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+
+    <h1
+      onclick="window.location.href='landing.html'"
+    >
+      TechStore
+    </h1>
+
+    <div class="nav-links">
+
+      <span
+        id="cart-count"
+        onclick="goToCart()"
+        style="cursor:pointer;"
+      >
+        🛒 Cart (0)
+      </span>
+
+      <button onclick="logout()">
+        Logout
+      </button>
+
+    </div>
+
+  </header>
+
+  <div class="search-container">
+
+    <input
+      type="text"
+      id="search"
+      placeholder="🔍 Search Products..."
+    >
+
+  </div>
+
+  <div
+    class="products"
+    id="products"
+  ></div>
+
+  <script src="authCheck.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

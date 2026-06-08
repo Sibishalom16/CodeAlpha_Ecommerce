@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <h1>TechStore</h1>
+
+      <h2 id="welcome-message"></h2>
+
+      <p>
+        Your One-Stop Destination For Premium Electronics
+      </p>
+
+      <div
+        class="hero-buttons"
+        id="button-container"
+      ></div>
+
+    </div>
+  </section>
+
+  <section class="features">
+
+    <div class="feature-card">
+      <h2>🚚</h2>
+      <h3>Fast Delivery</h3>
+      <p>
+        Quick delivery across the country.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h2>🔒</h2>
+      <h3>Secure Payments</h3>
+      <p>
+        Safe and trusted payment methods.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h2>💯</h2>
+      <h3>Quality Products</h3>
+      <p>
+        Premium electronics at great prices.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>
+      © 2026 TechStore. All Rights Reserved.
+    </p>
+  </footer>
+
+  <script>
+
+    const user = JSON.parse(
+      localStorage.getItem("user")
+    );
+
+    const welcome =
+      document.getElementById(
+        "welcome-message"
+      );
+
+    const buttons =
+      document.getElementById(
+        "button-container"
+      );
+
+    if (user) {
+
+      welcome.innerText =
+        `Welcome, ${user.name} 👋`;
+
+      buttons.innerHTML = `
+        <button onclick="enterStore()">
+          Enter Store
+        </button>
+
+        <button onclick="logout()">
+          Logout
+        </button>
+      `;
+
+    } else {
+
+      welcome.innerText =
+        "Welcome Guest 👋";
+
+      buttons.innerHTML = `
+        <button onclick="goLogin()">
+          Login
+        </button>
+
+        <button onclick="goRegister()">
+          Register
+        </button>
+      `;
+    }
+
+    function enterStore() {
+      window.location.href =
+        "index.html";
+    }
+
+    function goLogin() {
+      window.location.href =
+        "login.html";
+    }
+
+    function goRegister() {
+      window.location.href =
+        "register.html";
+    }
+
+    function logout() {
+
+      localStorage.removeItem("user");
+
+      window.location.reload();
+    }
+
+  </script>
+
+</body>
+</html>
